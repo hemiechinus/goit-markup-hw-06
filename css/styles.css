@@ -404,6 +404,8 @@ font-weight: 500;
 }
 .connect .title{
   margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 .footer-icons {
   display: flex;
@@ -422,6 +424,56 @@ font-weight: 500;
 .footer-icons:focus {
   background: var(--color-link);
   fill: currentColor;
+}
+
+.mailing{
+    margin-left: 93px;
+}
+
+.mailing .title{
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.email-form{
+  align-items: center;
+  display: flex;
+}
+.label-form{
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  width: 358px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  background: inherit;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.second-button{
+  cursor: pointer;
+  background: var(--color-link);
+  color: var(--color-w);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  width: 200px;
+  padding: 10px 0;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px; 
+  border: 0px;
+}
+.second-button svg{
+  margin-left: 10px;
 }
 /*portfolio main*/
 .examples {
@@ -525,6 +577,8 @@ font-weight: 500;
   width: 528px;
   height: 581px;
   background: var(--color-w);
+  padding-left: 41px;
+  padding-right: 39px;
 }
 .close{
   display: flex;
@@ -538,4 +592,63 @@ font-weight: 500;
   position: absolute;
   right: 8px;
   top: 8px;
+  transition-property: fill;
+  transition-duration:250ms;
+  transition-timing-function: var(--cubic) ;
 }
+.close:hover,
+.close:focus{
+  fill: var(--color-link);
+}
+.modal .title{
+  margin: 40px 0px 12px;
+  color: var(--color);
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+}
+.modal-form{
+  display: flex;
+  flex-direction: column;
+  color: var(--color);
+  margin-bottom: 10px;
+}
+.form-label{
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 0.857;
+  letter-spacing: 0.01em;
+  color:var(--color-text);
+  margin-bottom: 4px;
+}
+.form-input{
+  padding: 11px 12px;
+}
+textarea {
+  resize: none;
+}
+.send{
+  cursor: pointer;
+  background: var(--color-link);
+  color: var(--color-w);
+  width: 200px;
+  
+}
+/*
+cursor: pointer;
+  background: var(--color-link);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  width: 200px;
+  padding: 10px 0;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px; 
+  border: 0px;
+  */

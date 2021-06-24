@@ -45,19 +45,7 @@
             </h1>
             <button data-modal-open class="button" type="button" >Заказать услугу</button>
         </div>
-<!--
-    модальне вікно
--->
-<div data-modal class="backdrop is-hidden">
-    <div class="modal">
-        <button data-modal-close class="close">
-            <svg width="18px" height="18px">
-                <use href="./images/sprite.svg#icon-close"></use>
-            </svg>
-        </button>
-    </div>
-</div>
-<!-- modal window-->        
+        
         </section>
         <section class="section">
             <div class="container">
@@ -365,34 +353,84 @@
                             <svg class="icon" width="20px" height="20px">
                                 <use href="./images/sprite.svg#icon-instagram"></use>
                     </svg>
-                </a>
-            </li>
-            <li class="">
-                <a class="footer-icons" href="#">
-                    <svg class="icon" width="20px" height="20px">
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="footer-icons" href="#">
+                        <svg class="icon" width="20px" height="20px">
                         <use href="./images/sprite.svg#icon-twitter"></use>
-                     </svg>
-                    </a>
-                </li>
-                <li class="">
-                    <a class="footer-icons" href="#">
+                        </svg>
+                        </a>
+                    </li>
+                    <li class="">
+                        <a class="footer-icons" href="#">
                         <svg class="icon" width="20px" height="20px">
                             <use href="./images/sprite.svg#icon-facebook"></use>
                         </svg>
-                 </a>
-                </li>
-                <li class="">
+                        </a>
+                    </li>
+                    <li class="">
                     <a class="footer-icons" href="#">
                         <svg class="icon" width="20px" height="20px">
                             <use href="./images/sprite.svg#icon-linkedin"></use>
                      </svg>
                     </a>
-                </li>
-            </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="mailing">
+                <h2 class="title">Подпишитесь на рассылку</h2>
+                <form class="email-form" name="email-form">
+                    <label for="email" >
+                        <input class="label-form" type="email" name="email" id="email" placeholder="E-mail">
+                    </label>
+                    <button class="second-button" type="submit">Подписаться
+                        <svg width="24px" height="24px" > 
+                            <use href="./images/sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
+                </form>
+            </div>
         </div>
-    </div>
-</footer>
+    </footer>
+<!--
+    модальне вікно
+-->
+<div data-modal class="backdrop is-hidden">
+    <div class="modal">
+        <button data-modal-close class="close">
+            <svg width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
+        <div class="modal-form form">
+            <label class="form-label" for="name">Имя</label>
+            <input class="form-input" type="text" name="name" id="name">
+        </div>
+        <div class="modal-form form">
+            <label class="form-label" for="phone">Телефон</label>
+            <input class="form-input" type="tel" name="phone" id="phone">
+        </div>
+        <div class="modal-form form">
+            <label class="form-label" for="email">Почта</label>
+            <input class="form-input" type="email" name="email" id="email"> 
+        </div>
+        <div class="modal-form form">
+            <label class="form-label" for="comment">Комментарий</label>
+            <textarea class="form-input" rows="7" id="comment"  placeholder="Введите текст"> </textarea>
+        </div>
+        <div class="modal-form">
+            <label for="agreement">
+                <input type="checkbox" name="agreement" id="agreement"> 
+                Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+            </label>
 
+        </div>
+        <button class="send" type="submit">Отправить</button>
+    </div>
+</div>
+<!-- modal window-->
 <script src="./js/modal.js"></script>
 </body>
 
