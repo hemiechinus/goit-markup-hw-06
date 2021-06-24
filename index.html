@@ -404,19 +404,23 @@
             </svg>
         </button>
         <h2 class="title">Оставьте свои данные, мы вам перезвоним</h2>
-        <div class="modal-form form">
+        <form class="form">
+        <div class="modal-form">
             <label class="form-label" for="name">Имя</label>
             <input class="form-input" type="text" name="name" id="name">
+            <svg  width="18px" height="18px">
+                <use href="./images/sprite.svg#icon-person"></use>
+            </svg>
         </div>
-        <div class="modal-form form">
+        <div class="modal-form">
             <label class="form-label" for="phone">Телефон</label>
             <input class="form-input" type="tel" name="phone" id="phone">
         </div>
-        <div class="modal-form form">
+        <div class="modal-form">
             <label class="form-label" for="email">Почта</label>
             <input class="form-input" type="email" name="email" id="email"> 
         </div>
-        <div class="modal-form form">
+        <div class="modal-form">
             <label class="form-label" for="comment">Комментарий</label>
             <textarea class="form-input" rows="7" id="comment"  placeholder="Введите текст"> </textarea>
         </div>
@@ -427,7 +431,8 @@
             </label>
 
         </div>
-        <button class="send" type="submit">Отправить</button>
+        <button class="second-button" type="submit">Отправить</button>
+        </form>
     </div>
 </div>
 <!-- modal window-->
