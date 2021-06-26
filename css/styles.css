@@ -663,8 +663,18 @@ font-weight: 500;
 .form-label:focus,
 .form-input:focus,
 .form-input:hover{
-  fill: var(--color-link);
   border-color: var(--color-link);
+  outline: none;
+}
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+  fill: var(--color-link);
+}
+.form-input + .form-icon,
+.form-input + .form-icon {
+  transition-property: fill, border-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 .form-text placeholder{
   color: rgba(117, 117, 117, 0.5);
@@ -698,6 +708,9 @@ font-weight: 500;
   height: 15px;
   border: 2px solid var(--color);
   border-radius: 2px;
+  transition-property: border-color, background-color;
+  transition-duration: 250ms;
+  transition-timing-function: var(--cubic);
 }
 
 .form-checkbox:checked + .test{
