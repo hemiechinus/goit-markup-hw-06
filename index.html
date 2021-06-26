@@ -423,18 +423,16 @@
                     <use href="./images/sprite.svg#icon-email"></use>
                 </svg> 
             </label>
-        <div>
+        <div class="text-box">
             <label class="form-label" for="comment">Комментарий
             <textarea class="form-text" name="comment" rows="7" id="comment"  placeholder="Введите текст"> </textarea>
             </label>
         </div>
-        <div class="modal-form">
-            <label for="agreement">
-                <input type="checkbox" name="agreement" id="agreement"> 
-                Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a>
+            <label class="modal-form" >
+                <input class="form-checkbox" type="checkbox" name="agreement" value="Соглашаюсь с рассылкой и принимаю" > 
+                <span class="test"></span>
+                <p class="checkbox-text">Соглашаюсь с рассылкой и принимаю <a class="form-link" href="#">Условия договора</a></p>
             </label>
-
-        </div>
         <button class="second-button" type="submit">Отправить</button>
         </form>
     </div>
