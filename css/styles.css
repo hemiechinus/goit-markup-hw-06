@@ -718,6 +718,7 @@ address {
   transition-duration: 250ms;
   transition-timing-function: var(--cubic);
 }
+
 .form-checkbox:focus + .test {
   border-color: var(--color-link);
 }
